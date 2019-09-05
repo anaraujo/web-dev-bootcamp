@@ -1,8 +1,14 @@
 body {
   background: #232323;
 }
-body h1, body span {
+body h1 {
   color: white;
+}
+body #stripe {
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  color: black;
 }
 body #container {
   max-width: 600px;
@@ -11,7 +17,7 @@ body #container {
 body #container .square {
   width: 30%;
   float: left;
-  background: purple;
+  background-color: purple;
   margin: 1.66%;
   padding-bottom: 30%;
 }
