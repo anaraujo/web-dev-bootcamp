@@ -1,7 +1,7 @@
 body {
   background: #232323;
 }
-body h1 {
+body h1, body span {
   color: white;
 }
 body #container {
