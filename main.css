@@ -2,17 +2,6 @@ body {
   background: #F5D9D5;
   font-family: "Nunito", sans-serif;
 }
-body .blurb h2 {
-  color: #EA1C2C;
-  font-weight: 100;
-  font-size: 2.5rem;
-}
-body .blurb p {
-  color: #F498B8;
-  font-weight: 100;
-  font-size: 1.125rem;
-  line-height: 2;
-}
 body #mainNavbar {
   text-transform: uppercase;
   font-weight: 100;
@@ -38,6 +27,25 @@ body #headingGroup h1 {
   body #headingGroup h1 {
     font-size: 3rem;
   }
+}
+body .navbar.scrolled {
+  background: #DEC0DE;
+  transform: background 500ms;
+}
+body .content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+body .content .blurb h2 {
+  color: #EA1C2C;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+body .content .blurb p {
+  color: #F498B8;
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
 }
 
 /*# sourceMappingURL=main.css.map */

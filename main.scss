@@ -2,21 +2,6 @@ body {
 	background: #F5D9D5;
 	font-family: "Nunito", sans-serif;
 
-	.blurb {
-		h2 {
-			color: #EA1C2C;
-			font-weight: 100;
-			font-size: 2.5rem;
-		}
-
-		p {
-			color: #F498B8;
-			font-weight: 100;
-			font-size: 1.125rem;
-			line-height: 2;
-		}	
-	}
-
 	#mainNavbar {
 		text-transform: uppercase;
 		font-weight: 100;
@@ -47,6 +32,31 @@ body {
 			@media (max-width: 1200px) {
 				font-size: 3rem;
 			}
+		}
+	}
+
+	.navbar.scrolled {
+		background: #DEC0DE;
+		transform: background 500ms;
+	}
+
+	.content {
+		margin-top: 100px;
+		margin-bottom: 100px;
+
+		.blurb {
+			h2 {
+				color: #EA1C2C;
+				font-weight: 100;
+				font-size: 2.5rem;
+			}
+
+			p {
+				color: #F498B8;
+				font-weight: 100;
+				font-size: 1.125rem;
+				line-height: 2;
+			}	
 		}
 	}
 }
