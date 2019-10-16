@@ -12,8 +12,9 @@ body {
 		line-height: 1.1;
 	}
 
-	.selected {
-		background: blue;
+	#message {
+		display: inline-block;
+		width: 20%;
 	}
 
 	#colorDisplay {
@@ -25,18 +26,47 @@ body {
 		background-color: white;
 		text-align: center;
 		color: black;
+
+		button {
+			border: none;
+			background: none;
+			text-transform: uppercase;
+			height: 100%;
+			font-size: inherit;
+			font-weight: 700;
+			color: steelblue;
+			letter-spacing: 1px;
+			transition: all 0.3s;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			outline: none;
+
+			&:hover {
+				color: white;
+				background-color: steelblue;
+			}
+
+			&.selected {
+				color: white;
+				background: steelblue;
+			}
+		}
 	}
 
 	#container {
 		max-width: 600px;
-		margin: 0 auto;
+		margin: 20px auto;
 
 		.square {
 			width: 30%;
 			float: left;
 			background-color: purple;
 			margin: 1.66%;
+			border-radius: 15%;
 			padding-bottom: 30%;
+			transition: background 0.6s;
+			-webkit-transition: background 0.6s;
+			-moz-transition: background 0.6s;
 		}
 	}
 }
