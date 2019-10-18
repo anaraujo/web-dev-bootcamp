@@ -1,11 +1,12 @@
 // Check of specific to-dos by clicking
-
 $("li").click(function() {
-	if ($(this).css("color") === "rgb(128, 128, 128)") {
-		$(this).css("color", "black");
-		$(this).css("text-decoration", "none");
-	} else {
-		$(this).css("color", "grey");
-		$(this).css("text-decoration", "line-through");
-	}
+	$(this).toggleClass("completed");
+});
+
+//Click on X to delete todo
+$("span").click(function(event) {
+	$(this).parent().fadeOut(500, function() {
+		$(this).remove();
+	});
+	event.stopPropagation();
 });
